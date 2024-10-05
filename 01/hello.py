@@ -1,11 +1,5 @@
-RUN_INDENTED = True
+def greet(name="world"):
+    print("Hello", name)
 
-message = "running indented"
-
-print(message)
-
-def my_function():
-    greet = "Hello"
-    return greet
-
-print(my_function())
+# greet("Trey")
+greet()
