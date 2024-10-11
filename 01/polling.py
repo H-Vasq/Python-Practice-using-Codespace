@@ -1,8 +1,10 @@
+import time
+
 hungry = True
 
 while (hungry):
     print('Opening the front door')
-    front_door = open('front_door.txt', 'r', encoding='utf-8')
+    front_door = open('01/front_door.txt', 'r', encoding='utf-8')
 
     if 'Delivery Person' in front_door:
         print('The pizza is here!!!')
@@ -12,3 +14,5 @@ while (hungry):
 
     print('Closing the front door.\n')
     front_door.close()
+
+    time.sleep(1)
