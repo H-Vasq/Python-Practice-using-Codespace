@@ -1,11 +1,10 @@
-num1 = 5
-num2 = 2
-num3 = 0
+tot = 600
+bought_sale = True
+dis = 0
 
-if num1 != num2:
-    print('Num1 is not equal to num2')
-    num3 = 3
-else:
-    print('This works')
+if tot >= 1000 or bought_sale:
+    dis = 10
 
-print(num3)
+total = tot - tot*dis/100
+print(tot*dis/100)
+print(total)
